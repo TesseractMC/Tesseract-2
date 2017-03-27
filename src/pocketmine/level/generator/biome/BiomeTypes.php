@@ -8,8 +8,8 @@ abstract class BiomeTypes
 {
 
 	const OCEAN;
-  const COLD;
-  const MEDIUM;
-  const WARM ;
+	const COLD;
+	const MEDIUM;
+	const WARM;
 
 }
