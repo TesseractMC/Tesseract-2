@@ -19,21 +19,25 @@
  *
 */
 
-namespace pocketmine\level\generator\normal\biome;
+/* Modificated by NycuRO on 27.03.2017 */
+
+namespace pocketmine\level\generator\normal\biome\extension;
 
 use pocketmine\block\Sapling;
 use pocketmine\level\generator\normal\populator\Mushroom;
 use pocketmine\level\generator\normal\populator\TallGrass;
 use pocketmine\level\generator\normal\populator\Tree;
 
-class ForestBiome extends GrassyBiome{
+class ForestBiome extends GrassyBiome
+{
 
 	const TYPE_NORMAL = 0;
 	const TYPE_BIRCH = 1;
 
 	public $type;
 
-	public function __construct($type = self::TYPE_NORMAL){
+	public function __construct($type = self::TYPE_NORMAL)
+	{
 		parent::__construct();
 
 		$this->type = $type;
@@ -61,7 +65,9 @@ class ForestBiome extends GrassyBiome{
 		}
 	}
 
-	public function getName() : string{
+	public function getName() : string
+	{
 		return $this->type === self::TYPE_BIRCH ? "Birch Forest" : "Forest";
 	}
+
 }
