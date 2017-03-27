@@ -28,7 +28,7 @@ namespace pocketmine\level\generator\normal\biome\extension;
 use pocketmine\level\generator\normal\populator\Cactus;
 use pocketmine\level\generator\normal\populator\DeadBush;
 
-class BeachBiome extends SandyBiome
+class BeachBiome extends pocketmine\level\generator\normal\biome\SandyBiome
 {
 
 	public function __construct()
