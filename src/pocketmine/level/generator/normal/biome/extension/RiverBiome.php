@@ -19,15 +19,19 @@
  *
 */
 
-namespace pocketmine\level\generator\normal\biome;
+/* Modificated by NycuRO on 27.03.2017 */
+
+namespace pocketmine\level\generator\normal\biome\extension;
 
 use pocketmine\level\generator\normal\populator\Mushroom;
 use pocketmine\level\generator\normal\populator\SugarCane;
 use pocketmine\level\generator\normal\populator\TallGrass;
 
-class RiverBiome extends WateryBiome{
+class RiverBiome extends WateryBiome
+{
 
-	public function __construct(){
+	public function __construct()
+	{
 		parent::__construct();
 
 		$sugarcane = new SugarCane();
@@ -47,7 +51,9 @@ class RiverBiome extends WateryBiome{
 		$this->rainfall = 0.7;
 	}
 
-	public function getName() : string{
+	public function getName() : string
+	{
 		return "River";
 	}
+
 }
