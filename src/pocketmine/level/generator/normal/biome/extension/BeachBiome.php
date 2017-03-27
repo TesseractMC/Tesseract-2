@@ -21,14 +21,18 @@
  *
  */
 
-namespace pocketmine\level\generator\normal\biome;
+/* Modificated by NycuRO on 27.03.2017 */
+
+namespace pocketmine\level\generator\normal\biome\extension;
 
 use pocketmine\level\generator\normal\populator\Cactus;
 use pocketmine\level\generator\normal\populator\DeadBush;
 
-class BeachBiome extends SandyBiome{
+class BeachBiome extends SandyBiome
+{
 
-	public function __construct(){
+	public function __construct()
+	{
 		parent::__construct();
 
 		$this->removePopulator(Cactus::class);
@@ -37,7 +41,9 @@ class BeachBiome extends SandyBiome{
 		$this->setElevation(62, 65);
 	}
 
-	public function getName() : string{
+	public function getName() : string
+	{
 		return "Beach";
 	}
+
 } 
