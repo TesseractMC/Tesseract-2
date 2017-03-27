@@ -19,7 +19,9 @@
  *
 */
 
-namespace pocketmine\level\generator\normal\biome;
+/* Modificated by NycuRO on 27.03.2017 */
+
+namespace pocketmine\level\generator\normal\biome\extension;
 
 use pocketmine\block\Sapling;
 use pocketmine\block\Block;
@@ -27,9 +29,11 @@ use pocketmine\level\generator\normal\populator\MossStone;
 use pocketmine\level\generator\normal\populator\Mushroom;
 use pocketmine\level\generator\normal\populator\Tree;
 
-class TaigaBiome extends SnowyBiome{
+class TaigaBiome extends SnowyBiome
+{
 
-	public function __construct(){
+	public function __construct()
+	{
 		parent::__construct();
 
 		$trees = new Tree(Sapling::SPRUCE);
@@ -56,7 +60,9 @@ class TaigaBiome extends SnowyBiome{
 		]);
 	}
 
-	public function getName() : string{
+	public function getName() : string
+	{
 		return "Taiga";
 	}
+
 }
