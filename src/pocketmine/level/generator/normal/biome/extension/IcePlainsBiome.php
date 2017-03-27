@@ -19,13 +19,17 @@
  *
 */
 
-namespace pocketmine\level\generator\normal\biome;
+/* Modificated by NycuRO on 27.03.2017 */
+
+namespace pocketmine\level\generator\normal\biome\extension;
 
 use pocketmine\level\generator\normal\populator\TallGrass;
 
-class IcePlainsBiome extends SnowyBiome{
+class IcePlainsBiome extends SnowyBiome
+{
 
-	public function __construct(){
+	public function __construct()
+	{
 		parent::__construct();
 
 		$tallGrass = new TallGrass();
@@ -39,7 +43,9 @@ class IcePlainsBiome extends SnowyBiome{
 		$this->rainfall = 0.8;
 	}
 
-	public function getName() : string{
+	public function getName() : string
+	{
 		return "Ice Plains";
 	}
+
 }
