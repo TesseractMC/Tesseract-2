@@ -31,7 +31,7 @@ use pocketmine\level\generator\normal\populator\Mushroom;
 use pocketmine\level\generator\normal\populator\SugarCane;
 use pocketmine\level\generator\normal\populator\TallGrass;
 
-class SwampBiome extends GrassyBiome
+class SwampBiome extends pocketmine\level\generator\normal\biome\GrassyBiome
 {
 
 	public function __construct()
