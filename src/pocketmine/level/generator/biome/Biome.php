@@ -23,6 +23,7 @@ namespace pocketmine\level\generator\biome;
 
 use pocketmine\block\Block;
 use pocketmine\level\ChunkManager;
+use pocketmine\level\generator\normal\biome\extension\OceanBiome;
 use pocketmine\level\generator\normal\biome\extension\MesaBiome;
 use pocketmine\level\generator\normal\biome\extension\SwampBiome;
 use pocketmine\level\generator\normal\biome\extension\BeachBiome;
