@@ -27,7 +27,7 @@ use pocketmine\level\generator\normal\populator\Mushroom;
 use pocketmine\level\generator\normal\populator\SugarCane;
 use pocketmine\level\generator\normal\populator\TallGrass;
 
-class RiverBiome extends WateryBiome
+class RiverBiome extends pocketmine\level\generator\normal\biome\WateryBiome
 {
 
 	public function __construct()
