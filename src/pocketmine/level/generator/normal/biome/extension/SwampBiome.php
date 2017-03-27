@@ -19,6 +19,8 @@
  *
 */
 
+/* Modificated by NycuRO on 27.03.2017 */
+
 namespace pocketmine\level\generator\normal\biome\extension;
 
 use pocketmine\block\Block;
