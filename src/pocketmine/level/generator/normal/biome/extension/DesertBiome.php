@@ -19,16 +19,20 @@
  *
 */
 
-namespace pocketmine\level\generator\normal\biome;
+/* Modificated by NycuRO on 27.03.2017 */
+
+namespace pocketmine\level\generator\normal\biome\extension;
 
 use pocketmine\block\Block;
 use pocketmine\level\generator\normal\populator\DeadBush;
 use pocketmine\level\generator\normal\populator\Mushroom;
 use pocketmine\level\generator\normal\populator\SugarCane;
 
-class DesertBiome extends SandyBiome{
+class DesertBiome extends SandyBiome
+{
 
-	public function __construct(){
+	public function __construct()
+	{
 		$deadBush = new DeadBush();
 		$deadBush->setBaseAmount(1);
 		$deadBush->setRandomAmount(4);
@@ -86,7 +90,9 @@ class DesertBiome extends SandyBiome{
 		]);
 	}
 
-	public function getName() : string{
+	public function getName() : string 
+	{
 		return "Desert";
 	}
+
 }
