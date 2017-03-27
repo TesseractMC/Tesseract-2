@@ -23,18 +23,15 @@ namespace pocketmine\level\generator\biome;
 
 use pocketmine\block\Block;
 use pocketmine\level\ChunkManager;
-use pocketmine\level\generator\normal\biome\MesaBiome;
-use pocketmine\level\generator\normal\biome\BeachBiome;
-use pocketmine\level\generator\normal\biome\SwampBiome;
-use pocketmine\level\generator\normal\biome\DesertBiome;
-use pocketmine\level\generator\normal\biome\ForestBiome;
-use pocketmine\level\generator\normal\biome\IcePlainsBiome;
-use pocketmine\level\generator\normal\biome\MountainsBiome;
-use pocketmine\level\generator\normal\biome\OceanBiome;
-use pocketmine\level\generator\normal\biome\PlainBiome;
-use pocketmine\level\generator\normal\biome\RiverBiome;
-use pocketmine\level\generator\normal\biome\SmallMountainsBiome;
-use pocketmine\level\generator\normal\biome\TaigaBiome;
+use pocketmine\level\generator\normal\biome\extension\MesaBiome;
+use pocketmine\level\generator\normal\biome\extension\SwampBiome;
+use pocketmine\level\generator\normal\biome\extension\BeachBiome;
+use pocketmine\level\generator\normal\biome\extension\DesertBiome;
+use pocketmine\level\generator\normal\biome\extension\ForestBiome;
+use pocketmine\level\generator\normal\biome\extension\IcePlainsBiome;
+use pocketmine\level\generator\normal\biome\extension\PlainBiome;
+use pocketmine\level\generator\normal\biome\extension\RiverBiome;
+use pocketmine\level\generator\normal\biome\extension\TaigaBiome;
 use pocketmine\level\generator\nether\biome\HellBiome;
 use pocketmine\level\generator\populator\Populator;
 use pocketmine\utils\Random;
@@ -121,21 +118,14 @@ abstract class Biome{
 		self::register(self::OCEAN, new OceanBiome());
 		self::register(self::PLAINS, new PlainBiome());
 		self::register(self::DESERT, new DesertBiome());
-		self::register(self::MOUNTAINS, new MountainsBiome());
 		self::register(self::FOREST, new ForestBiome());
 		self::register(self::TAIGA, new TaigaBiome());
 		self::register(self::SWAMP, new SwampBiome());
 		self::register(self::RIVER, new RiverBiome());
-		
 		self::register(self::BEACH, new BeachBiome());
 		self::register(self::MESA, new MesaBiome());
-
 		self::register(self::ICE_PLAINS, new IcePlainsBiome());
-
-
-		self::register(self::SMALL_MOUNTAINS, new SmallMountainsBiome());
 		self::register(self::HELL, new HellBiome());
-
 		self::register(self::BIRCH_FOREST, new ForestBiome(ForestBiome::TYPE_BIRCH));
 	}
 
