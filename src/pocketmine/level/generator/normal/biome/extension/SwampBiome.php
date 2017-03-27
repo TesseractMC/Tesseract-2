@@ -19,7 +19,7 @@
  *
 */
 
-namespace pocketmine\level\generator\normal\biome;
+namespace pocketmine\level\generator\normal\biome\extension;
 
 use pocketmine\block\Block;
 use pocketmine\block\Flower as FlowerBlock;
@@ -29,9 +29,11 @@ use pocketmine\level\generator\normal\populator\Mushroom;
 use pocketmine\level\generator\normal\populator\SugarCane;
 use pocketmine\level\generator\normal\populator\TallGrass;
 
-class SwampBiome extends GrassyBiome{
+class SwampBiome extends GrassyBiome
+{
 
-	public function __construct(){
+	public function __construct()
+	{
 		parent::__construct();
 
 		$flower = new Flower();
@@ -60,7 +62,9 @@ class SwampBiome extends GrassyBiome{
 		$this->rainfall = 0.9;
 	}
 
-	public function getName() : string{
+	public function getName() : string
+	{
 		return "Swamp";
 	}
+
 }
