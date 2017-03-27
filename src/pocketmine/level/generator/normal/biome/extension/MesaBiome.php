@@ -21,16 +21,18 @@
  *
  */
 
-namespace pocketmine\level\generator\normal\biome;
+namespace pocketmine\level\generator\normal\biome\extension;
 
 use pocketmine\block\Block;
 use pocketmine\block\StainedClay;
 use pocketmine\level\generator\normal\populator\Cactus;
 use pocketmine\level\generator\normal\populator\DeadBush;
 
-class MesaBiome extends SandyBiome{
+class MesaBiome extends SandyBiome
+{
 
-	public function __construct(){
+	public function __construct()
+	{
 		parent::__construct();
 
 		$cactus = new Cactus();
@@ -77,7 +79,9 @@ class MesaBiome extends SandyBiome{
 		]);
 	}
 
-	public function getName() : string{
+	public function getName() : string
+	{
 		return "Mesa";
 	}
+
 } 
