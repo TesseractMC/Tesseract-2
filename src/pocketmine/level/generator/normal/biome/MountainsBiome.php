@@ -19,35 +19,11 @@
  *
 */
 
+/* Modificated by NycuRO on 29.03.2017 */
+
 namespace pocketmine\level\generator\normal\biome;
 
-
-use pocketmine\level\generator\normal\populator\TallGrass;
-use pocketmine\level\generator\normal\populator\Tree;
-
-class MountainsBiome extends GrassyBiome{
-
-	public function __construct(){
-		parent::__construct();
-
-		$trees = new Tree();
-		$trees->setBaseAmount(1);
-		$this->addPopulator($trees);
-
-		$tallGrass = new TallGrass();
-		$tallGrass->setBaseAmount(6);
-
-		$this->addPopulator($tallGrass);
-
-		//TODO: add emerald
-
-		$this->setElevation(63, 127);
-
-		$this->temperature = 0.4;
-		$this->rainfall = 0.5;
-	}
-
-	public function getName() : string{
-		return "Mountains";
-	}
+class MountainsBiome extends GrassyBiome
+{
+	
 }
