@@ -25,7 +25,9 @@ namespace pocketmine\level\generator\normal\biome\extension;
 
 use pocketmine\level\generator\normal\populator\TallGrass;
 
-class IcePlainsBiome extends pocketmine\level\generator\normal\biome\SnowyBiome
+use pocketmine\level\generator\normal\biome\SnowyBiome as SB;
+
+class IcePlainsBiome extends SB
 {
 
 	public function __construct()
