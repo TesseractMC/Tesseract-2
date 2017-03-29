@@ -30,7 +30,9 @@ use pocketmine\block\StainedClay;
 use pocketmine\level\generator\normal\populator\Cactus;
 use pocketmine\level\generator\normal\populator\DeadBush;
 
-class MesaBiome extends pocketmine\level\generator\normal\biome\SandyBiome
+use pocketmine\level\generator\normal\biome\SandyBiome as SB;
+
+class MesaBiome extends SB
 {
 
 	public function __construct()
