@@ -28,7 +28,9 @@ use pocketmine\level\generator\normal\populator\DeadBush;
 use pocketmine\level\generator\normal\populator\Mushroom;
 use pocketmine\level\generator\normal\populator\SugarCane;
 
-class DesertBiome extends pocketmine\level\generator\normal\biome\SandyBiome
+use pocketmine\level\generator\normal\biome\SandyBiome as SB;
+
+class DesertBiome extends SB
 {
 
 	public function __construct()
