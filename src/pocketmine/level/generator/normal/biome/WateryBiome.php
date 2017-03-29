@@ -19,8 +19,11 @@
  *
  */
 
+/* Modificated by NycuRO on 29.03.2017 */
+
 namespace pocketmine\level\generator\normal\biome;
 
-abstract class WateryBiome extends GrassyBiome{
-
+abstract class WateryBiome extends GrassyBiome
+{
+	
 }
