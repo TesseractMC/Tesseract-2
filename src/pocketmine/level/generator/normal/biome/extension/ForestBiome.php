@@ -28,7 +28,9 @@ use pocketmine\level\generator\normal\populator\Mushroom;
 use pocketmine\level\generator\normal\populator\TallGrass;
 use pocketmine\level\generator\normal\populator\Tree;
 
-class ForestBiome extends pocketmine\level\generator\normal\biome\GrassyBiome
+use pocketmine\level\generator\normal\biome\GrassyBiome as GB;
+
+class ForestBiome extends GB
 {
 
 	const TYPE_NORMAL = 0;
