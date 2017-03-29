@@ -27,6 +27,7 @@ namespace pocketmine\level\generator\normal\biome\extension;
 
 use pocketmine\level\generator\normal\populator\Cactus;
 use pocketmine\level\generator\normal\populator\DeadBush;
+
 use pocketmine\level\generator\normal\biome\SandyBiome as SB;
 
 class BeachBiome extends SB
