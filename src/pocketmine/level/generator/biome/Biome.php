@@ -93,7 +93,7 @@ abstract class Biome{
 	const MUTATED_SWAMPLAND = 134;
 	const MUTATED_ICE_FLATS = 140;
 	const MUTATED_JUNGLE = 149;
-	const UNKNOWN = 150; // ?? - MiNET
+	const UNKNOWN_BIOME = 150; // ?? - MiNET 
 	const MUTATED_JUNGLE_EDGE = 151;
 	const MUTATED_BIRCH_FOREST = 155;
 	const MUTATED_BIRCH_FOREST_HILLS = 156;
