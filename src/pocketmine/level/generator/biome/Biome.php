@@ -155,7 +155,7 @@ abstract class Biome{
 		self::register(self::RIVER, new RiverBiome());
 		self::register(self::BEACHES, new BeachBiome());
 		self::register(self::MESA, new MesaBiome());
-		self::register(self::ICE_PLAINS, new IcePlainsBiome());
+		self::register(self::ICE_FLATS, new IcePlainsBiome());
 		self::register(self::HELL, new HellBiome());
 		self::register(self::BIRCH_FOREST, new ForestBiome(ForestBiome::TYPE_BIRCH));
 	}
