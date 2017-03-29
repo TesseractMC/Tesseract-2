@@ -153,7 +153,7 @@ abstract class Biome{
 		self::register(self::TAIGA, new TaigaBiome());
 		self::register(self::SWAMPLAND, new SwampBiome());
 		self::register(self::RIVER, new RiverBiome());
-		self::register(self::BEACH, new BeachBiome());
+		self::register(self::BEACHES, new BeachBiome());
 		self::register(self::MESA, new MesaBiome());
 		self::register(self::ICE_PLAINS, new IcePlainsBiome());
 		self::register(self::HELL, new HellBiome());
