@@ -27,7 +27,9 @@ use pocketmine\level\generator\normal\populator\Mushroom;
 use pocketmine\level\generator\normal\populator\SugarCane;
 use pocketmine\level\generator\normal\populator\TallGrass;
 
-class OceanBiome extends pocketmine\level\generator\normal\biome\WateryBiome
+use pocketmine\level\generator\normal\biome\WateryBiome as WB;
+
+class OceanBiome extends WB
 {
 
 	public function __construct()
