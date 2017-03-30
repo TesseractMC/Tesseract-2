@@ -46,16 +46,16 @@ class DeepOceanBiome extends NB
 
 		$this->temperature = (float) 0.5;
 		$this->rainfall = (float) 0.5;
-
-		for ($y >= 16; $y <= 63; ++$y)
-		{
-  			$chunk->setBlockId($x, $y, $z, Block::STILL_WATER);
-		}
 	}
 
 	public function getName() : string
 	{
 		return "Deep Ocean";
+	}
+	
+	for ($y >= 16; $y <= 63; ++$y)
+	{
+  		$chunk->setBlockId($x, $y, $z, Block::STILL_WATER);
 	}
 
 }
