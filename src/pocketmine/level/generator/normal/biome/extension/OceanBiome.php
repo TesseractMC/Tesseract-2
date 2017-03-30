@@ -23,10 +23,6 @@
 
 namespace pocketmine\level\generator\normal\biome\extension;
 
-use pocketmine\level\generator\normal\populator\Mushroom;
-use pocketmine\level\generator\normal\populator\SugarCane;
-use pocketmine\level\generator\normal\populator\TallGrass;
-
 use pocketmine\level\generator\normal\biome\WateryBiome as WB;
 
 class OceanBiome extends WB
