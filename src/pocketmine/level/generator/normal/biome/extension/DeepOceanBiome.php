@@ -25,6 +25,7 @@ namespace pocketmine\level\generator\normal\biome\extension;
 
 use pocketmine\block\Block;
 use pocketmine\level\ChunkManager;
+use pocketmine\level\generator\biome\Biome;
 
 class DeepOceanBiome extends OceanBiome
 {
@@ -36,7 +37,7 @@ class DeepOceanBiome extends OceanBiome
   Ocean monuments generate in deep oceans, which spawn guardians.
 	*/
 
-	public function __construct()
+	public function __construct($x, $y, $z) : Biome
 	{
 
 		$this->setElevation(16, 63);
