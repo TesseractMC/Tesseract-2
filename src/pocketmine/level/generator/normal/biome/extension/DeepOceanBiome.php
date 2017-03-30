@@ -53,9 +53,4 @@ class DeepOceanBiome extends NB
 		return "Deep Ocean";
 	}
 
-	if ($y >= 16 && $y <= 63)
-	{
-  		$chunk->setBlockId($x, $y, $z, Block::STILL_WATER);
-	}
-
 }
