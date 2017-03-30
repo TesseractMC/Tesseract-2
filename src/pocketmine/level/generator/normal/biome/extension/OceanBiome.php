@@ -54,7 +54,7 @@ class OceanBiome extends WB
 		return "Ocean";
 	}
 	
-	for ($y = 46; $y >= 63; ++$y)
+	for ($y >= 46; $y <= 63; ++$y)
 	{
 		$chunk->setBlockId($x, $y, $z, Block::STILL_WATER);
 	}
