@@ -39,6 +39,7 @@ class DeepOceanBiome extends OceanBiome
 
 	public function __construct($x, $y, $z) : Biome
 	{
+		parent::__construct();
 
 		$this->setElevation(16, 63);
 
