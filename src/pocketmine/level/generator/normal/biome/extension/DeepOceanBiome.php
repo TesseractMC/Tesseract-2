@@ -52,7 +52,7 @@ class DeepOceanBiome extends OceanBiome
 
 	public function getName() : string
 	{
-		return "Ocean";
+		return "Deep Ocean";
 	}
 
 }
