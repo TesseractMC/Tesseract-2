@@ -224,7 +224,7 @@ class Normal extends Generator{
 
 					if($noiseValue > 0){
 						$chunk->setBlockId($x, $y, $z, Block::STONE);
-					}elseif($y <= $this->waterHeight && $solidLand == false && $biome !=== Biome::getBiome(Biome::OCEAN)){
+					}elseif($y <= $this->waterHeight && $solidLand == false && $biome !== Biome::getBiome(Biome::OCEAN)){
 						$chunk->setBlockId($x, $y, $z, Block::STILL_WATER);
 					}
 				}
