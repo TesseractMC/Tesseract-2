@@ -45,8 +45,8 @@ class OceanBiome extends WB
 
 		$this->setElevation(46, 63);
 
-		$this->temperature = 0.5;
-		$this->rainfall = 0.5;
+		$this->temperature = 0.5F;
+		$this->rainfall = 0.5F;
 	}
 
 	public function getName() : string
