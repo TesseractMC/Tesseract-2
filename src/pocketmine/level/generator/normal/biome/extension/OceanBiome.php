@@ -40,7 +40,7 @@ class OceanBiome extends NB
 	In the Console versions, they surround the edges of the map.
 	*/
 
-	public function __construct($x, $y, $z) : Biome
+	public function __construct()
 	{
 		parent::__construct();
 
