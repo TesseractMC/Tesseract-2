@@ -23,7 +23,10 @@
 
 namespace pocketmine\level\generator\normal\biome;
 
-abstract class WateryBiome extends GrassyBiome
+abstract class NeutralBiome extends GrassyBiome
 {
-	
+	/* DESC:
+	These biomes are usually covered with water and have very little land exposed. 
+	Either that, or they have many variants of themselves which are also variants of other non-neutral biomes.
+	*/
 }
