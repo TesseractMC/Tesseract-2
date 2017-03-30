@@ -23,6 +23,8 @@
 
 namespace pocketmine\level\generator\normal\biome\extension;
 
+use pocketmine\block\Block;
+use pocketmine\level\ChunkManager;
 use pocketmine\level\generator\normal\biome\WateryBiome as WB;
 
 class OceanBiome extends WB
@@ -50,6 +52,11 @@ class OceanBiome extends WB
 	public function getName() : string
 	{
 		return "Ocean";
+	}
+	
+	for ($y = 46; $y >= 63; ++$y)
+	{
+		$chunk->setBlockId($x, $y, $z, Block::STILL_WATER);
 	}
 
 }
