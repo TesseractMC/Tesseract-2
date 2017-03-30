@@ -35,7 +35,6 @@ class DeepOceanBiome extends OceanBiome
 
 	public function __construct()
 	{
-		parent::__construct();
 
 		$this->setElevation(16, 63);
 
@@ -47,5 +46,10 @@ class DeepOceanBiome extends OceanBiome
 	{
 		return "Deep Ocean";
 	}
+	
+	for ($y >= 16; $y <= 63; ++$y)
+  	{
+  		$chunk->setBlockId($x, $y, $z, Block::STILL_WATER);
+  	}
 
 }
