@@ -53,7 +53,7 @@ class Normal extends Generator{
 	protected $level;
 	/** @var Random */
 	protected $random;
-	protected $waterHeight = 62;
+	protected $waterHeight = 64;
 	protected $bedrockDepth = 5;
 
 	/** @var Populator[] */
