@@ -26,8 +26,9 @@ namespace pocketmine\level\generator\normal\biome\extension;
 use pocketmine\block\Block;
 use pocketmine\level\ChunkManager;
 use pocketmine\level\generator\biome\Biome;
+use pocketmine\level\generator\normal\biome\NeutralBiome as NB;
 
-class DeepOceanBiome extends OceanBiome
+class DeepOceanBiome extends NB
 {
 
 	/* DESC:
