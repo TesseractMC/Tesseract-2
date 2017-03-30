@@ -224,32 +224,32 @@ class Normal extends Generator{
 
 					if($noiseValue > 0){
 						$chunk->setBlockId($x, $y, $z, Block::STONE);
-					}elseif($y <= $this->waterHeight && $solidLand == false){
+					}elseif($y <= $this->waterHeight && $solidLand == false && $biome !=== Biome::getBiome(Biome::OCEAN)){
 						$chunk->setBlockId($x, $y, $z, Block::STILL_WATER);
 					}
 				}
+				
+				if (Biome instanceof $biome === Biome::getBiome(Biome::OCEAN)
+				{
+					for ($y >= 46; $y <= 63; ++$y) 
+					{
+						$chunk->setBlockId($x, $y, $z, Block::STILL_WATER);
+					}
+				}
+			
+				/*if (Biome instanceof $biome = Biome::getBiome(Biome::DEEP_OCEAN)
+				{
+					for ($y >= 16; $y <= 63; ++$y) 
+					{
+						$chunk->setBlockId($x, $y, $z, Block::STILL_WATER);
+					}
+				}*/
 			}
 		}
 
 		foreach($this->generationPopulators as $populator){
 			$populator->populate($this->level, $chunkX, $chunkZ, $this->random);
 		}
-		
-		if (Biome instanceof $biome = Biome::getBiome(Biome::OCEAN)
-		{
-			for ($y >= 46; $y <= 63; ++$y) 
-			{
-				$chunk->setBlockId($x, $y, $z, Block::STILL_WATER);
-			}
-		}
-			
-		/*if (Biome instanceof $biome = Biome::getBiome(Biome::DEEP_OCEAN)
-		{
-			for ($y >= 16; $y <= 63; ++$y) 
-			{
-				$chunk->setBlockId($x, $y, $z, Block::STILL_WATER);
-			}
-		}*/
 				
 	}
 
