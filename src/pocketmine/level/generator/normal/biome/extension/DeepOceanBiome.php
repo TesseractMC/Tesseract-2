@@ -52,7 +52,7 @@ class DeepOceanBiome extends NB
 	{
 		return "Deep Ocean";
 	}
-	
+
 	for ($y >= 16; $y <= 63; ++$y)
 	{
   		$chunk->setBlockId($x, $y, $z, Block::STILL_WATER);
