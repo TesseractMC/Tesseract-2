@@ -38,8 +38,8 @@ class DeepOceanBiome extends OceanBiome
 
 		$this->setElevation(16, 63);
 
-		$this->temperature = 0.5F;
-		$this->rainfall = 0.5F;
+		$this->temperature = (float) 0.5;
+		$this->rainfall = (float) 0.5;
 	}
 
 	public function getName() : string
