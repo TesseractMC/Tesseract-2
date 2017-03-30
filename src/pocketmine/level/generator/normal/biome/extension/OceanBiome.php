@@ -47,16 +47,16 @@ class OceanBiome extends WB
 
 		$this->temperature = (float) 0.5;
 		$this->rainfall = (float) 0.5;
+		
+		for ($y >= 46; $y <= 63; ++$y)
+		{
+			$chunk->setBlockId($x, $y, $z, Block::STILL_WATER);
+		}
 	}
 
 	public function getName() : string
 	{
-		return "Ocean";
-	}
-	
-	for ($y >= 46; $y <= 63; ++$y)
-	{
-		$chunk->setBlockId($x, $y, $z, Block::STILL_WATER);
+		return "Deep Ocean";
 	}
 
 }
