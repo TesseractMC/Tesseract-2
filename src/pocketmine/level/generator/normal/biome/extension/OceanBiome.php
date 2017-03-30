@@ -25,6 +25,7 @@ namespace pocketmine\level\generator\normal\biome\extension;
 
 use pocketmine\block\Block;
 use pocketmine\level\ChunkManager;
+use pocketmine\level\generator\biome\Biome;
 use pocketmine\level\generator\normal\biome\NeutralBiome as NB;
 
 class OceanBiome extends NB
@@ -39,7 +40,7 @@ class OceanBiome extends NB
 	In the Console versions, they surround the edges of the map.
 	*/
 
-	public function __construct()
+	public function __construct($x, $y, $z) : Biome
 	{
 		parent::__construct();
 
