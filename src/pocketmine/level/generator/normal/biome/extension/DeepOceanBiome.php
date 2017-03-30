@@ -38,7 +38,7 @@ class DeepOceanBiome extends NB
   Ocean monuments generate in deep oceans, which spawn guardians.
 	*/
 
-	public function __construct($x, $y, $z) : Biome
+	public function __construct()
 	{
 		parent::__construct();
 
