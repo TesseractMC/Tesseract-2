@@ -210,7 +210,7 @@ class Normal extends Generator{
 
 				for($y >= 46; $y <= 63; ++$y){
 					if (Biome instanceof $biome === Biome::getBiome(Biome::OCEAN){
-						$chunk->setBlockId($x, $y, $z, Block::STILL_WATER);
+						$chunk->setBlockId($x, $y, $z, Block::STILL_WATER);;
 					}
 						}
 
