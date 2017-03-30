@@ -56,7 +56,7 @@ class OceanBiome extends WB
 
 	public function getName() : string
 	{
-		return "Deep Ocean";
+		return "Ocean";
 	}
 
 }
