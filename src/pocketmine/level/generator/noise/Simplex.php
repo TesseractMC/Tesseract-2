@@ -110,6 +110,13 @@ class Simplex extends Perlin{
 
 		// For the 3D case, the simplex shape is a slightly irregular tetrahedron.
 
+		$i1 = 0;
+        $j1 = 0;
+        $k1 = 0;
+        $i2 = 0;
+        $j2 = 0;
+        $k2 = 0;
+
 		// Determine which simplex we are in.
 		if($x0 >= $y0){
 			if($y0 >= $z0){
@@ -230,6 +237,9 @@ class Simplex extends Perlin{
 		$y0 = $y - ($j - $t);
 
 		// For the 2D case, the simplex shape is an equilateral triangle.
+
+		$i1 = 0;
+		$j1 = 0;
 
 		// Determine which simplex we are in.
 		if($x0 > $y0){
