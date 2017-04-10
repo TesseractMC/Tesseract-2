@@ -23,10 +23,19 @@
 
 namespace pocketmine\level\generator\normal\biome;
 
+use pocketmine\block\Block;
+
 abstract class NeutralBiome extends GrassyBiome
 {
 	/* DESC:
 	These biomes are usually covered with water and have very little land exposed. 
 	Either that, or they have many variants of themselves which are also variants of other non-neutral biomes.
 	*/
+
+	public function __construct()
+	{
+		$this->setGroundCover([
+			Block::get(Block::GRAVEL, 0),
+		]);
+	}
 }
