@@ -30,9 +30,9 @@ class BiomeSelector{
 	private $fallback;
 
 	/** @var Simplex */
-	private $temperature;
+	public (float) $temperature;
 	/** @var Simplex */
-	private $rainfall;
+	public (float) $rainfall;
 
 	/** @var Biome[] */
 	private $biomes = [];
@@ -46,7 +46,7 @@ class BiomeSelector{
 		$this->rainfall = new Simplex($random, 2, 1 / 16, 1 / 512);
 	}
 	
-	public function lookup($temperature, $rainfall){
+	public function lookup(float $temperature, float $rainfall){
 		if($rainfall < 0.25){
 			if($temperature < 0.7){
 				return Biome::OCEAN;
@@ -113,8 +113,8 @@ class BiomeSelector{
 	 * @return Biome
 	 */
 	public function pickBiome($x, $z){
-		$temperature = (int) ($this->getTemperature($x, $z) * 63);
-		$rainfall = (int) ($this->getRainfall($x, $z) * 63);
+		$temperature = (float) ($this->getTemperature($x, $z) * 63);
+		$rainfall = (float) ($this->getRainfall($x, $z) * 63);
 
 		$biomeId = $this->map[$temperature + ($rainfall << 6)];
 		return isset($this->biomes[$biomeId]) ? $this->biomes[$biomeId] : $this->fallback;
