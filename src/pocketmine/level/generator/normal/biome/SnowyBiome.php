@@ -21,6 +21,10 @@
 
 /* Modificated by NycuRO on 29.03.2017 */
 
+/* DESC:
+In these biomes, it snows at any height. The foliage and grass is a dark aqua-green.
+*/
+
 namespace pocketmine\level\generator\normal\biome;
 
 use pocketmine\block\Block;
