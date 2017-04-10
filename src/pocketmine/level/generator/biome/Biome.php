@@ -123,8 +123,8 @@ abstract class Biome{
 
 	private $groundCover = [];
 
-	public float $rainfall;
-	public float $temperature;
+	public (float) $rainfall;
+	public (float) $temperature;
 
 	protected static function register($id, Biome $biome){
 		self::$biomes[(int) $id] = $biome;
