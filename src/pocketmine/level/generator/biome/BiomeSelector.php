@@ -46,40 +46,119 @@ class BiomeSelector{
 		$this->rainfall = new Simplex($random, 2, 1 / 16, 1 / 512);
 	}
 	
-	public function lookup(float $temperature, float $rainfall){
-		if($rainfall < 0.25){
-			if($temperature < 0.7){
-				return Biome::OCEAN;
-			}elseif($temperature < 0.85){
-				return Biome::RIVER;
-			}else{
-				return Biome::SWAMP;
+	public function lookup(float $temperature, float $rainfall)
+	{
+
+		if($temperature < 0.5)
+		{
+			// Cold Biomes here.
+
+			if($temperature < 0.15)
+			{
+
+				if($rainfall < 0.5)
+				{
+					// return Biome::EXTREME_HILLS;
+				} 
+				else
+				{
+					// return Biome::SMALLER_EXTREME_HILLS;
+				}
 			}
-		}elseif($rainfall < 0.60){
-			if($temperature < 0.25){
-				return Biome::ICE_PLAINS;
-			}elseif($temperature < 0.75){
+			if($temperature < 0.4)
+			{
+
+				if($rainfall < 0.5)
+				{
+
+					return Biome::TAIGA;
+
+				}
+				else
+				{
+
+					return Biome::ICE_FLATS;
+
+				}
+			}
+
+			if($rainfall < 0.5) 
+			{
+
 				return Biome::PLAINS;
-			}else{
-				return Biome::DESERT;
+
 			}
-		}elseif($rainfall < 0.80){
-			if($temperature < 0.25){
-				return Biome::TAIGA;
-			}elseif($temperature < 0.75){
-				return Biome::FOREST;
-			}else{
-				return Biome::BIRCH_FOREST;
-			}
-		}else{
-			if($temperature < 0.25){
-				return Biome::MOUNTAINS;
-			}elseif($temperature < 0.70){
-				return Biome::SMALL_MOUNTAINS;
-			}elseif($temperature <= 2.0){
-				return Biome::MESA;
-			}else{
+			else
+			{
+
 				return Biome::RIVER;
+
+			}
+		}
+		else
+		{
+			// Warm Biomes
+			if($temperature < 0.6)
+			{
+
+				if($rainfall < 0.5)
+				{
+
+					return Biome::BIRCH_FOREST;
+
+				}
+				else
+				{
+
+					return Biome::FOREST;
+
+				}
+			}
+
+			if($temperature < 0.7)
+			{
+				// return Biome::ROOFED_FOREST;
+			}
+
+			if($rainfall < 0.25)
+			{
+
+				if($temperature < 0.85)
+				{
+
+					return Biome::DESERT;
+
+				}
+				else
+				{
+					// return Biome::MESA_PLATEAU;
+				}
+			}
+
+			if($rainfall < 0.85)
+			{
+
+				if($temperature < 0.58)
+				{
+					// return Biome::SAVANNA;
+				}
+				else
+				{
+
+					return Biome::OCEAN;
+
+				}
+			}
+
+			if($rainfall < 0.93)
+			{
+
+				return Biome::SWAMP;
+
+			}
+			else
+			{
+				// return Biome::JUNGLE;
 			}
 		}
 	}
