@@ -123,8 +123,8 @@ abstract class Biome{
 
 	private $groundCover = [];
 
-	protected float $rainfall;
-	protected float $temperature;
+	protected $rainfall;
+	protected $temperature;
 
 	protected static function register($id, Biome $biome){
 		self::$biomes[(int) $id] = $biome;
@@ -233,11 +233,11 @@ abstract class Biome{
 		$this->groundCover = $covers;
 	}
 
-	public function getTemperature(){
+	public float function getTemperature(){
 		return $this->temperature;
 	}
 
-	public function getRainfall(){
+	public float function getRainfall(){
 		return $this->rainfall;
 	}
 }
