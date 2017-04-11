@@ -153,7 +153,7 @@ class BiomeSelector{
 			if($rainfall < 0.93)
 			{
 
-				return Biome::SWAMP;
+				return Biome::SWAMPLAND;
 
 			}
 			else
