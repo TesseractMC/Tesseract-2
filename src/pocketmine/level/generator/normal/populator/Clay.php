@@ -7,7 +7,7 @@
 namespace pocketmine\level\generator\normal\populator;
 
 use pocketmine\block\Block;
-use pocketmine\block\Clay;
+use pocketmine\block\Clay as BlockClay;
 use pocketmine\level\ChunkManager;
 use pocketmine\level\generator\populator\VariableAmountPopulator;
 use pocketmine\utils\Random;
@@ -42,7 +42,7 @@ class Clay extends VariableAmountPopulator
 				$yy = $this->getHighestWorkableBlock($xx, $zz);
 				if($yy !== -1)
         		{
-					$this->level->setBlockIdAt($xx, $yy, $zz, Clay::CLAY_BLOCK);
+					$this->level->setBlockIdAt($xx, $yy, $zz, BlockClay::CLAY_BLOCK);
 				}
 			}
 		}
