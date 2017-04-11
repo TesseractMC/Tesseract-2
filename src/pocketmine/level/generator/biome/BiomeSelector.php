@@ -30,9 +30,9 @@ class BiomeSelector{
 	private $fallback;
 
 	/** @var Simplex */
-	public (float) $temperature;
+	protected float $temperature;
 	/** @var Simplex */
-	public (float) $rainfall;
+	protected float $rainfall;
 
 	/** @var Biome[] */
 	private $biomes = [];
