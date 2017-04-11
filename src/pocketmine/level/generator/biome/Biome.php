@@ -233,11 +233,11 @@ abstract class Biome{
 		$this->groundCover = $covers;
 	}
 
-	public float function getTemperature(){
+	public function getTemperature(){
 		return $this->temperature;
 	}
 
-	public float function getRainfall(){
+	public function getRainfall(){
 		return $this->rainfall;
 	}
 }
